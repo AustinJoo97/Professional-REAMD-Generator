@@ -42,7 +42,10 @@ const licenses = {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    console.log(fileName);
+    console.log(data);
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -95,7 +98,7 @@ function init() {
         },
     ])
     .then((response) => {
-        console.log(response);
+        writeToFile('customREADME.md', response)
     })
 }
 

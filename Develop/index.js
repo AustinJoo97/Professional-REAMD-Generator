@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = ['What is the name of the application?', 'Do you have a deployed project link?', 'Please describe this project,its purpose, intallation, and setup!', 'What technologies were used in the making of this application?', 'Who are the main contributors for this project?', 'What tests were performed to determine the proper functionality of this application?','What license is affiliated with this application?', 'What is an email '];
+const questions = ['What is the name of the application?', 'Do you have a deployed project link?', 'Please describe this project,its purpose, intallation, and setup!', 'What technologies were used in the making of this application? Please separate each using commas!', 'Who are the main contributors for this project?', 'What tests were performed to determine the proper functionality of this application?','What license is affiliated with this application?', 'What is an email '];
 const licenses = {
     'Academic Free License v3.0': 'afl-3.0',
     'Apache license 2.0': 'apache-2.0',
@@ -81,7 +81,7 @@ function init() {
             type: 'list',
             message: questions[6],
             name: 'licenses',
-            choices: []
+            choices: Object.keys(licenses)
         }
     ])
     .then((response) => {

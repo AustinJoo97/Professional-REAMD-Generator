@@ -44,10 +44,13 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  if(!license){
+    return "";
+  }
   let renderBadge = renderLicenseBadge(license);
   let renderLink = renderLicenseLink(license);
 
-  return `## License\n\`\`\`\n[![License](${renderBadge})]\nLicense Link: ${renderLink}\n\`\`\``
+  return `## License Information\n\`\`\`\n[![License](${renderBadge})]\nLicense Link: ${renderLink}\n\`\`\``
 }
 
 // TODO: Create a function to generate markdown for README
@@ -87,9 +90,25 @@ function generateMarkdown(data) {
 ${data.deployedLink}
 \`\`\`
 
-## Contributors
+## Table of Contents
 \`\`\`
-${theTeam}
+- Description, Setup, and Installation
+- Usage
+- Technologies Used
+- License Information
+- Conrtibutors
+- Testing Performed
+- Questions
+\`\`\`
+
+## Description, Setup, and Installation
+\`\`\`
+${data.descriptionAndSetup}
+\`\`\`
+
+## Usage
+\`\`\`
+${data.usage}
 \`\`\`
 
 ## Technologies Used
@@ -97,17 +116,17 @@ ${theTeam}
 ${techUsed}
 \`\`\`
 
-## Description and Setup
+${licenseSection}
+
+## Contributors
 \`\`\`
-${data.descriptionAndSetup}
+${theTeam}
 \`\`\`
 
-## Testing Performing
+## Testing Performed
 \`\`\`
 ${data.testing}
 \`\`\`
-
-${licenseSection}
 
 ## Questions
 \`\`\`

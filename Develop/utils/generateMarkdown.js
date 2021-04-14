@@ -47,12 +47,13 @@ function renderLicenseSection(license) {
   let renderBadge = renderLicenseBadge(license);
   let renderLink = renderLicenseLink(license);
 
-  return `## License\n\`\`\`\n[![License](${renderBadge})]\n${renderLink}\n\`\`\``
+  return `## License\n\`\`\`\n[![License](${renderBadge})]\nLicense Link: ${renderLink}\n\`\`\``
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  if(data.deployedLink === 'N/a' || data.deployedLink === 'n/a'){
+  let notApplicable = ['N/A', 'N/a', 'n/a', 'n/A', 'NA', 'na']
+  if(notApplicable.includes(data.deployedLink)){
     data.deployedLink = 'N/a';
   } 
 

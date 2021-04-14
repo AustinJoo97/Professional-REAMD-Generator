@@ -10,8 +10,7 @@ const licenses = ['Apache license 2.0', 'Boost Software License 1.0', 'BSD 2-cla
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    // This refines the value of data.deployedLink in the case no deployed link exists
-    fs.writeFile(fileName, generator.genearteMarkdown(data), (err) => {
+    fs.writeFile(fileName, generator(data), (err) => {
         err ? console.log(err) : console.log(`Success!`)
     });
 }

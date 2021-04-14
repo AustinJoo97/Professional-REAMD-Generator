@@ -54,7 +54,8 @@ function writeToFile(fileName, data) {
     let theTeam = '';
     for(let i = 0; i < data.contributors.length; i++){
         if(i === data.contributors.length-1){
-            theTeam += `${data.contributors[i]}`
+            theTeam += `${data.contributors[i]}`;
+            break;
         }
         theTeam += `${data.contributors[i]}\n`
     }
@@ -63,49 +64,50 @@ function writeToFile(fileName, data) {
     let techUsed = '';
     for(let i = 0; i < data.technologies.length; i++){
         if(i === data.technologies.length-1){
-            techUsed += `${data.technologies[i]}`
+            techUsed += `${data.technologies[i]}`;
+            break;
         }
-        techUsed += `${data.technologies[i]}\n`
+        techUsed += `${data.technologies[i]}\n`;
     }
 
     let fileText =`# ${data.appName}
 
-    ## Deployed Site Link
-    \```\
-    ${data.deployedLink}
-    \```\
-    
-    ## Contributors
-    \```\
-    ${theTeam}
-    \```\
-    
-    ## Technologies Used
-    \```\
-    ${techUsed}
-    \```\
-    
-    ## Description and Setup
-    \```\
-    ${data.descriptionAndSetup}
-    \```\
+## Deployed Site Link
+\`\`\`
+${data.deployedLink}
+\`\`\`
 
-    ## Testing Performing
-    \```\
-    ${data.testing}
-    \```\
+## Contributors
+\`\`\`
+${theTeam}
+\`\`\`
 
-    ## License
-    \```\
-    ${data.license}
-    \```\
+## Technologies Used
+\`\`\`
+${techUsed}
+\`\`\`
 
-    ## Questions
-    \```\
-    Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
-    GitHub: ${data.gitHubUserame} 
-    Email: ${data.email}
-    \```\ `;
+## Description and Setup
+\`\`\`
+${data.descriptionAndSetup}
+\`\`\`
+
+## Testing Performing
+\`\`\`
+${data.testing}
+\`\`\`
+
+## License
+\`\`\`
+${data.license}
+\`\`\`
+
+## Questions
+\`\`\`
+Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
+GitHub: ${data.gitHubUserame} 
+Email: ${data.email}
+\`\`\` `;
 
     fs.writeFile(fileName, fileText, (err) => {
         err ? console.log(err) : console.log(`Success!`)
@@ -138,12 +140,12 @@ function init() {
         },
         {
             type: 'input',
-            message: questions[4],
+            message: questions[5],
             name: 'testing'
         },
         {
             type: 'input',
-            message: questions[5],
+            message: questions[4],
             name: 'contributors'
         },
         {

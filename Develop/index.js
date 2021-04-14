@@ -68,49 +68,48 @@ function writeToFile(fileName, data) {
         techUsed += `${data.technologies[i]}\n`
     }
 
+    let fileText =`# ${data.appName}
 
+    ## Deployed Site Link
+    \```\
+    ${data.deployedLink}
+    \```\
+    
+    ## Contributors
+    \```\
+    ${theTeam}
+    \```\
+    
+    ## Technologies Used
+    \```\
+    ${techUsed}
+    \```\
+    
+    ## Description and Setup
+    \```\
+    ${data.descriptionAndSetup}
+    \```\
 
-    console.log(fileName);
-    console.log(
-        `# ${data.appName}
+    ## Testing Performing
+    \```\
+    ${data.testing}
+    \```\
 
-        ## Deployed Site Link
-        \```\
-        ${data.deployedLink}
-        \```\
-        
-        ## Contributors
-        \```\
-        ${theTeam}
-        \```\
-        
-        ## Technologies Used
-        \```\
-        ${techUsed}
-        \```\
-        
-        ## Description and Setup
-        \```\
-        ${data.descriptionAndSetup}
-        \```\
+    ## License
+    \```\
+    ${data.license}
+    \```\
 
-        ## Testing Performing
-        \```\
-        ${data.testing}
-        \```\
+    ## Questions
+    \```\
+    Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
+    GitHub: ${data.gitHubUserame} 
+    Email: ${data.email}
+    \```\ `;
 
-        ## License
-        \```\
-        ${data.license}
-        \```\
-        
-        ## Questions
-        \```\
-        Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
-        GitHub: ${data.gitHubUserame} 
-        Email: ${data.email}
-        \```\
-        `);
+    fs.writeFile(fileName, fileText, (err) => {
+        err ? console.log(err) : console.log(`Success!`)
+    });
 }
 
 // TODO: Create a function to initialize app

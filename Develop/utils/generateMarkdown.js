@@ -50,7 +50,7 @@ function renderLicenseSection(license) {
   let renderBadge = renderLicenseBadge(license);
   let renderLink = renderLicenseLink(license);
 
-  return `## License Information\n\![License](${renderBadge})\n[License Link](${renderLink})`
+  return `## License Information\n\![License](${renderBadge})\n\n[License Link](${renderLink})`
 }
 
 // TODO: Create a function to generate markdown for README
@@ -82,10 +82,11 @@ function generateMarkdown(data) {
   }
 
   let licenseSection = renderLicenseSection(data.license);
+  let licenseBadge = renderLicenseBadge(data.license);
 
-  return `# ${data.appName}
+  return `# ${data.appName} ![License](${licenseBadge})
 
-## Deployed Site Link
+## Deployed Site Link 
 
 ${data.deployedLink}
 
@@ -95,21 +96,17 @@ ${data.deployedLink}
 - [Description, Setup, and Installation](#description-setup-and-installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [License Information](#license-information)
+- [Full License Information](#license-information)
 - [Conrtibutors](#contributors)
 - [Testing Performed](#testing-performed)
 - [Questions](#questions)
 
 
 ## Description, Setup, and Installation
-\`\`\`
 ${data.descriptionAndSetup}
-\`\`\`
 
 ## Usage
-\`\`\`
 ${data.usage}
-\`\`\`
 
 ## Technologies Used
 \`\`\`
@@ -124,16 +121,12 @@ ${theTeam}
 \`\`\`
 
 ## Testing Performed
-\`\`\`
 ${data.testing}
-\`\`\`
 
 ## Questions
-\`\`\`
 Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
-GitHub: ${data.gitHubUserame} 
-Email: ${data.email}
-\`\`\` `;
+- GitHub: ${data.gitHubUsername} 
+- Email: ${data.email}`
 }
 
 module.exports = generateMarkdown;

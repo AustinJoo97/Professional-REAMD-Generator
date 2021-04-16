@@ -1,4 +1,4 @@
-# Test Generator ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Test README Generation ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Deployed Site Link 
 
@@ -17,25 +17,23 @@ N/a
 
 
 ## Description, Setup, and Installation
-```
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-```
+Test
 
 ## Usage
-```
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-```
+Test
 
 ## Technologies Used
 ```
 HTML
-Foundation
+CSS
+JavaScript
 JSON
-Angular
-PHP
-Java
-Express.js
-SQL
+jQuery
+Redux
+C#
+Python
+Ruby
+GO
 ```
 
 ## License Information
@@ -49,11 +47,9 @@ Tester
 ```
 
 ## Testing Performed
-```
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-```
+Test
 
 ## Questions
 Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
-- GitHub: undefined 
+- GitHub: AustinJoo97 
 - Email: austinjoo1997@gmail.com

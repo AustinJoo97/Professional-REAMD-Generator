@@ -6,18 +6,18 @@ const licenses = {
   'Creative Commons Zero v1.0 Universal': ['https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg', 'http://creativecommons.org/publicdomain/zero/1.0/'],
   'Creative Commons Attribution 4.0': ['https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg', 'https://creativecommons.org/licenses/by/4.0/'],
   'Creative Commons Attribution ShareAlike 4.0': ['https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg', 'https://creativecommons.org/licenses/by-sa/4.0/'],
-  'Eclipse Public License 1.0': ['https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0', 'https://www.eclipse.org/legal/epl-v10.html'],
+  'Eclipse Public License 1.0': ['https://img.shields.io/badge/License-EPL%201.0-red.svg', 'https://www.eclipse.org/legal/epl-v10.html'],
   'GNU Affero General Public License v3.0': ['https://img.shields.io/badge/License-AGPL%20v3-blue.svg', 'https://www.gnu.org/licenses/agpl-3.0'],
   'GNU General Public License v2.0': ['https://img.shields.io/badge/License-GPL%20v2-blue.svg', 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'],
-  'GNU General Public License v3.0': ['https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0', 'https://www.gnu.org/licenses/gpl-3.0.en.html'],
+  'GNU General Public License v3.0': ['https://img.shields.io/badge/License-GPLv3-blue.svg', 'https://www.gnu.org/licenses/gpl-3.0.en.html'],
   'GNU Lesser General Public License v3.0': ['https://img.shields.io/badge/License-LGPL%20v3-blue.svg', 'https://www.gnu.org/licenses/lgpl-3.0'],
   'IBM v1.0': ['https://img.shields.io/badge/License-IPL%201.0-blue.svg', 'https://opensource.org/licenses/IPL-1.0'],
-  'ISC': ['https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC', 'https://opensource.org/licenses/ISC'],
-  'MIT': ['https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT', 'https://opensource.org/licenses/MIT'],
+  'ISC': ['https://img.shields.io/badge/License-ISC-blue.svg', 'https://opensource.org/licenses/ISC'],
+  'MIT': ['https://img.shields.io/badge/License-MIT-yellow.svg', 'https://opensource.org/licenses/MIT'],
   'Mozilla Public License 2.0': ['https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg', 'https://opensource.org/licenses/MPL-2.0'],
   'The Perl License': ['https://img.shields.io/badge/License-Perl-0298c3.svg', 'https://opensource.org/licenses/Artistic-2.0'],
   'SIL Open Font License 1.1': ['https://img.shields.io/badge/License-OFL%201.1-lightgreen.svg', 'https://opensource.org/licenses/OFL-1.1'],
-  'The Unlicense': ['https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/', 'https://unlicense.org/'],
+  'The Unlicense': ['https://img.shields.io/badge/license-Unlicense-blue.svg', 'https://unlicense.org/'],
   'zLib License': ['https://img.shields.io/badge/License-Zlib-lightgrey.svg', 'https://opensource.org/licenses/Zlib']
 }
 
@@ -50,7 +50,7 @@ function renderLicenseSection(license) {
   let renderBadge = renderLicenseBadge(license);
   let renderLink = renderLicenseLink(license);
 
-  return `## License Information\n\`\`\`\n[![License](${renderBadge})]\nLicense Link: ${renderLink}\n\`\`\``
+  return `## License Information\n\![License](${renderBadge})\n[License Link](${renderLink})`
 }
 
 // TODO: Create a function to generate markdown for README
@@ -86,20 +86,20 @@ function generateMarkdown(data) {
   return `# ${data.appName}
 
 ## Deployed Site Link
-\`\`\`
+
 ${data.deployedLink}
-\`\`\`
+
 
 ## Table of Contents
-\`\`\`
-- Description, Setup, and Installation [here](#description,-setup,-and-installation)
-- Usage [here](#usage)
-- Technologies Used [here](#technologies-used)
-- License Information [here](#license-information)
-- Conrtibutors [here](#contributors)
-- Testing Performed [here](#testing-performed)
-- Questions [here](#questions)
-\`\`\`
+
+- [Description, Setup, and Installation](#description-setup-and-installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License Information](#license-information)
+- [Conrtibutors](#contributors)
+- [Testing Performed](#testing-performed)
+- [Questions](#questions)
+
 
 ## Description, Setup, and Installation
 \`\`\`

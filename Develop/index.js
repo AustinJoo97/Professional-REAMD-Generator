@@ -26,7 +26,8 @@ function init() {
         {
             type: 'input',
             message: `${questions[1]} If not, enter 'N/a'!`,
-            name: 'deployedLink'
+            name: 'deployedLink',
+            default: 'N/a'
         },
         {
             type: 'input',

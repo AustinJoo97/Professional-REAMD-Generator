@@ -7,7 +7,7 @@ N/a
 
 ## Table of Contents
 ```
-- [Description, Setup, and Installation]()
+- [Description, Setup, and Installation](https://google.com/)
 - [Usage](##usage)
 - [Technologies Used](##technologies-used)
 - [License Information](##license-information)

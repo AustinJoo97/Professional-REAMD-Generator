@@ -1,20 +1,19 @@
 # Generator
 
 ## Deployed Site Link
-```
+
 N/a
-```
+
 
 ## Table of Contents
-```
-- [Description, Setup, and Installation](https://google.com/)
+
+- [Description, Setup, and Installation](##description-setup-and-installation)
 - [Usage](##usage)
 - [Technologies Used](##technologies-used)
 - [License Information](##license-information)
 - [Conrtibutors](##contributors)
 - [Testing Performed](##testing-performed)
 - [Questions](##questions)
-```
 
 ## Description, Setup, and Installation
 ```
@@ -42,10 +41,10 @@ SQL
 ```
 
 ## License Information
-```
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)]
-License Link: https://opensource.org/licenses/MIT
-```
+
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+[License Link] https://opensource.org/licenses/MIT
+
 
 ## Contributors
 ```

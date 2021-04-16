@@ -92,13 +92,13 @@ ${data.deployedLink}
 
 ## Table of Contents
 \`\`\`
-- Description, Setup, and Installation
-- Usage
-- Technologies Used
-- License Information
-- Conrtibutors
-- Testing Performed
-- Questions
+- Description, Setup, and Installation [here](#description,-setup,-and-installation)
+- Usage [here](#usage)
+- Technologies Used [here](#technologies-used)
+- License Information [here](#license-information)
+- Conrtibutors [here](#contributors)
+- Testing Performed [here](#testing-performed)
+- Questions [here](#questions)
 \`\`\`
 
 ## Description, Setup, and Installation

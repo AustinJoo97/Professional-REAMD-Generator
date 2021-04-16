@@ -1,6 +1,6 @@
 # Test Generator
 
-## Deployed Site Link
+## Deployed Site Link ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 N/a
 
@@ -10,7 +10,7 @@ N/a
 - [Description, Setup, and Installation](#description-setup-and-installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [License Information](#license-information)
+- [Full License Information](#license-information)
 - [Conrtibutors](#contributors)
 - [Testing Performed](#testing-performed)
 - [Questions](#questions)
@@ -23,23 +23,19 @@ N/a
 
 ## Usage
 ```
- ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos q
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
 ```
 
 ## Technologies Used
 ```
-Bootstrap
-JavaScript
-HTML DOM
-XML
+HTML
+Foundation
+JSON
 Angular
-Redux
-C++
+PHP
 Java
-Node.js
-Ruby
-GO
-MongoDB
+Express.js
+SQL
 ```
 
 ## License Information
@@ -49,17 +45,15 @@ MongoDB
 ## Contributors
 ```
 Austin
-Bill
+Tester
 ```
 
 ## Testing Performed
 ```
-This is a test generation
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
 ```
 
 ## Questions
-```
 Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
-GitHub: undefined 
-Email: austinjoo97@gmail.com
-``` 
+- GitHub: undefined 
+- Email: austinjoo1997@gmail.com

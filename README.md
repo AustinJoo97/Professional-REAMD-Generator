@@ -7,13 +7,13 @@ N/a
 
 ## Table of Contents
 
-- [Description, Setup, and Installation](##description-setup-and-installation)
-- [Usage](##usage)
-- [Technologies Used](##technologies-used)
-- [License Information](##license-information)
-- [Conrtibutors](##contributors)
-- [Testing Performed](##testing-performed)
-- [Questions](##questions)
+- [Description, Setup, and Installation](#description-setup-and-installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [License Information](#license-information)
+- [Conrtibutors](#contributors)
+- [Testing Performed](#testing-performed)
+- [Questions](#questions)
 
 ## Description, Setup, and Installation
 ```

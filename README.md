@@ -1,6 +1,6 @@
-# Test Generator
+# Test Generator ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Deployed Site Link ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+## Deployed Site Link 
 
 N/a
 

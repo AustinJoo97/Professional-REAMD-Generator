@@ -7,7 +7,7 @@ N/a
 
 ## Table of Contents
 ```
-[Description, Setup, and Installation](##description-setup-and-installation)
+- [Description, Setup, and Installation]()
 - [Usage](##usage)
 - [Technologies Used](##technologies-used)
 - [License Information](##license-information)

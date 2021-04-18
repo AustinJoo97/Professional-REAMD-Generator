@@ -50,3 +50,6 @@ As there is no web application (HTML/CSS/other) viewport for this program itself
 Please contact me with any questions, comments, or concerns regarding this repo or if you would like to be a fellow contributor to this project!
 - GitHub: AustinJoo97 
 - Email: austinjoo1997@gmail.com
+
+## Fullscreen Demonstration
+![NPM Demo](./Demo/demo.gif)

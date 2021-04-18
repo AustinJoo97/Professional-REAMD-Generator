@@ -51,5 +51,5 @@ Please contact me with any questions, comments, or concerns regarding this repo 
 - GitHub: AustinJoo97 
 - Email: austinjoo1997@gmail.com
 
-## Fullscreen Demonstration
+## Demonstration
 ![NPM Demo](./Demo/demo.gif)
